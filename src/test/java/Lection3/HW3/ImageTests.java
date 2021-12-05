@@ -222,21 +222,3 @@ public class ImageTests {
         return byteArray;
     }
 }
-
-
-//    //Обновление информации об изображении
-//    @Test
-//    void UpdateImageInformation (){
-
-//       given()
-//                .headers(headers)
-//                .log()
-//                .method()
-//                .log()
-//                .uri()
-//                .expect()
-//                .body("data.title",equalTo("cat"))
-//                .contentType("application/json")
-//                .when()
-//                .post("https://api.imgur.com/3/image/"+uploadedImageId)
-//                .prettyPeek();
