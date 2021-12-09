@@ -92,8 +92,11 @@
             <artifactId>allure-rest-assured</artifactId>
             <version>2.13.9</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+        </dependency>
 
 
     </dependencies>
