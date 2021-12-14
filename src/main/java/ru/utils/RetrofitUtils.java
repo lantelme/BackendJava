@@ -12,7 +12,7 @@ import java.time.Duration;
 public class RetrofitUtils {
   HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
 
-  public Retrofit getRetrofit(){
+  public static Retrofit getRetrofit(){
     OkHttpClient client = new OkHttpClient.Builder()
             .connectTimeout(Duration.ofMinutes(1l))
             .addInterceptor(logging.setLevel(HttpLoggingInterceptor.Level.BASIC))
