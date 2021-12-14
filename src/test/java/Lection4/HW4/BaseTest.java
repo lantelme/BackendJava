@@ -23,7 +23,7 @@ import java.util.Properties;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static ru.Endpoints.UPLOAD_IMAGE;
+//import static ru.Endpoints.UPLOAD_IMAGE;
 
 public abstract class BaseTest {
     static ResponseSpecification positiveResponseSpecification;
