@@ -11,19 +11,15 @@ import java.time.Duration;
 @UtilityClass
 public class RetrofitUtils {
   HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
-
-  public static Retrofit getRetrofit(){
+  public Retrofit getRetrofit() {
     OkHttpClient client = new OkHttpClient.Builder()
             .connectTimeout(Duration.ofMinutes(1l))
             .addInterceptor(logging.setLevel(HttpLoggingInterceptor.Level.BASIC))
             .build();
-
-    Retrofit.Builder builder = new Retrofit.Builder()
-                .client(client)
-                .baseUrl("http://80.78.248.82:8189/market/api/v1/")
-                .addConverterFactory(JacksonConverterFactory.create());
-
-        return builder
-                .build();
+    return new Retrofit.Builder()
+            .client(client)
+            .baseUrl("http://80.78.248.82:8189/market/api/v1/")
+            .addConverterFactory(JacksonConverterFactory.create())
+            .build();
   }
 }
