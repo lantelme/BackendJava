@@ -134,7 +134,8 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-
+        <plugins>
+            
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
